@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/ti1400/!svn/ver/305/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl
+END
+EconomicActivityServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/ti1400/!svn/ver/169/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/EconomicActivityServicesImpl.java
+END
+BaseServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/ti1400/!svn/ver/13/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/BaseServicesImpl.java
+END
+CommerceServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/ti1400/!svn/ver/218/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/CommerceServicesImpl.java
+END
+TimeLimitServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/ti1400/!svn/ver/243/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/TimeLimitServicesImpl.java
+END
+FinancialInstitutionServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/ti1400/!svn/ver/257/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/FinancialInstitutionServicesImpl.java
+END
+UserServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/ti1400/!svn/ver/235/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/UserServicesImpl.java
+END
+RoleServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/ti1400/!svn/ver/186/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/RoleServicesImpl.java
+END
+AgreementServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/ti1400/!svn/ver/278/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/AgreementServicesImpl.java
+END
+KitServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/ti1400/!svn/ver/305/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/KitServicesImpl.java
+END
+QuestionServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/ti1400/!svn/ver/254/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/QuestionServicesImpl.java
+END
+ChannelServicesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/ti1400/!svn/ver/243/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/impl/ChannelServicesImpl.java
+END

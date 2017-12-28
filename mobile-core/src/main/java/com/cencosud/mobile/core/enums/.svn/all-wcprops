@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ti1400/!svn/ver/223/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/enums
+END
+RoleEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/ti1400/!svn/ver/199/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/enums/RoleEnum.java
+END
+ResultMessageEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/ti1400/!svn/ver/154/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/enums/ResultMessageEnum.java
+END
+StatusEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/ti1400/!svn/ver/223/BdP/trunk/administrator/administrator-core/src/main/java/com/payments/administrator/core/enums/StatusEnum.java
+END

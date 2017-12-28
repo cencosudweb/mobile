@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ti1400/!svn/ver/254/BdP/trunk/administrator/administrator-core/src/main/resources/mail
+END
+reset-pass-template.vm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ti1400/!svn/ver/254/BdP/trunk/administrator/administrator-core/src/main/resources/mail/reset-pass-template.vm
+END
+user-creation-template.vm
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ti1400/!svn/ver/254/BdP/trunk/administrator/administrator-core/src/main/resources/mail/user-creation-template.vm
+END

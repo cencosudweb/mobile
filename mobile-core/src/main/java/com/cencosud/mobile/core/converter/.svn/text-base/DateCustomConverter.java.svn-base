@@ -1,0 +1,28 @@
+package com.payments.administrator.core.converter;
+
+import java.util.Date;
+
+import org.dozer.DozerConverter;
+
+public class DateCustomConverter extends DozerConverter<Date, Long> {
+
+	public DateCustomConverter() {
+		super(Date.class, Long.class);
+	}
+
+	@Override
+	public Long convertTo(Date source, Long destination) {
+		if(source != null){
+	    	return source.getTime() / 1000L;
+	    }
+	    return (long) -1;
+	}
+
+	@Override
+	public Date convertFrom(Long source, Date destination) {
+		if(source != null)		
+			return new Date(source * 1000L);
+		return null;
+	}
+
+}

@@ -1,0 +1,47 @@
+package com.payments.administrator.core.email;
+
+
+/**
+ * 
+ * @author Diego Sepulveda
+ *
+ */
+public class MailConf {
+	private String subject;
+	private String to;
+	private String from;
+	private String template;
+	private String phone;
+	
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	public String getTo() {
+		return to;
+	}
+	public void setTo(String to) {
+		this.to = to;
+	}
+	public String getTemplate() {
+		return template;
+	}
+	public void setTemplate(String template) {
+		this.template = template;
+	}
+	public void setFrom(String from) {
+		this.from = from;
+	}
+	public String getFrom() {
+		return from;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	
+}

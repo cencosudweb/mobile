@@ -1,0 +1,50 @@
+package com.payments.administrator.core.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.payments.administrator.core.ChannelServices;
+import com.payments.administrator.dao.ChannelDao;
+import com.payments.administrator.dao.domain.Channel;
+import com.payments.administrator.dto.users.ChannelDTO;
+/**
+ * 
+ * @author Diego Sepulveda
+ *
+ */
+@Repository
+public class ChannelServicesImpl extends BaseServicesImpl implements ChannelServices{
+
+	@Autowired
+	private ChannelDao channelDaoImpl;
+	
+	private static Logger log = Logger.getLogger(ChannelServicesImpl.class);
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional
+	public List<ChannelDTO> getChannels() {
+		List<ChannelDTO> result = new ArrayList<ChannelDTO>();
+		
+		List<Channel> channels;
+		try {
+			
+			channels = channelDaoImpl.getChannels();
+			if(channels != null && !channels.isEmpty()){
+				result = (List<ChannelDTO>) mapper.map(channels, List.class);
+			}
+
+		} catch (Exception e) {
+			log.error("Error inesperado", e);
+		}
+		
+		return result;
+	}
+
+	
+}

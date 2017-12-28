@@ -1,0 +1,46 @@
+package com.payments.administrator.core.impl;
+
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.payments.administrator.core.KitServices;
+import com.payments.administrator.dao.domain.UrlCallback;
+import com.payments.administrator.dao.mapper.KitMapper;
+import com.payments.administrator.dto.users.UrlCallbackDTO;
+import com.payments.administrator.dto.ws.UrlNotificationParams;
+import com.payments.administrator.dto.ws.UrlNotificationResult;
+
+/**
+ * 
+ * @author Manuel Zagal
+ *
+ */
+@Repository
+public class KitServicesImpl extends BaseServicesImpl implements KitServices {
+
+	@Autowired
+	private KitMapper kitDaoImpl;
+
+	private static Logger log = Logger.getLogger(KitServicesImpl.class);
+
+	@Override
+	public UrlNotificationResult getUrlNotificacion(UrlNotificationParams params) {
+		UrlCallbackDTO urlCallback = null;
+		UrlNotificationResult result = new UrlNotificationResult();
+		try {
+			UrlCallback agreementSource = kitDaoImpl.getUrlCallback(params.getIdAgreement(), params.getChannel());
+			if(agreementSource != null){
+				urlCallback = mapper.map(agreementSource, UrlCallbackDTO.class);
+			}
+			
+			result.setUrlCallback(urlCallback);
+			
+		} catch (Exception e) {
+			log.error("Error inesperado", e);
+			result.setCodError(100);
+			result.setMsgError("Error inesperado");
+		}
+		return result;
+	}
+}

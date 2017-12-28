@@ -1,0 +1,48 @@
+package com.payments.administrator.core.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.payments.administrator.core.EconomicActivityServices;
+import com.payments.administrator.dao.EconomicActivityDao;
+import com.payments.administrator.dao.domain.EconomicActivity;
+import com.payments.administrator.dto.users.EconomicActivityDTO;
+
+/**
+ * 
+ * @author disepulv
+ * 
+ */
+@Repository
+public class EconomicActivityServicesImpl extends BaseServicesImpl implements EconomicActivityServices {
+
+	@Autowired
+	private EconomicActivityDao economicActivityDaoImpl;
+	
+	private static Logger log = Logger.getLogger(EconomicActivityServicesImpl.class);
+
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional
+	public List<EconomicActivityDTO> getActivities() {
+		List<EconomicActivityDTO> result = new ArrayList<EconomicActivityDTO>();
+		List<EconomicActivity> economicActivity;
+		try {
+
+			economicActivity = economicActivityDaoImpl.getActivities();
+			result = (List<EconomicActivityDTO>) mapper.map(economicActivity, List.class);
+
+		} catch (Exception e) {
+			log.error("Error inesperado", e);
+		}
+
+		return result;
+	}
+
+
+}
